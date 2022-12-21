@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz App!"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"/>
+
+  <com.google.android.material.card.MaterialCardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:background="@color/white"
+      app:cardCornerRadius="30dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="16dp"
+          android:orientation="vertical">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Welcome"
+              android:textColor="@color/black"
+              android:textSize="30sp"
+              android:textStyle="bold"
+              android:gravity="center"/>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:text="Please enter your name."
+              android:textColor="#788393"
+              android:textSize="17sp"
+              android:textStyle="bold"
+              android:gravity="center"/>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+              android:layout_marginTop="20dp"
+              >
+
+              <androidx.appcompat.widget.AppCompatEditText
+                  android:id="@+id/et_name"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="e.g. Bubba"
+                  android:inputType="textCapWords"
+                  android:textColor="@color/purple_200"
+                  android:textColorHint="#7a8089"
+                  />
+
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <Button
+              android:id="@+id/button_start"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Start Vroom"
+              android:textColor="@color/white"
+              android:textSize="18sp"
+              android:layout_marginTop="16dp"
+              android:background="@color/design_default_color_primary">
+
+          </Button>
+
+      </LinearLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
