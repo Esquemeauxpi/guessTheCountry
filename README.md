@@ -1,7 +1,5 @@
 # guessTheCountry
-dabbling with Kotlin.  This is an ongoing project.
-
-Working on this project from a Udemy course*, & keeping my work here to stay agile with Github.
+Learning Kotlin from a Udemy course*.  Keeping my work here as I learn.
 
 This it what it looks like so far.  Will be updating as I change the UI, questions, and project structure.  Might add some tests too. ;-)
 
