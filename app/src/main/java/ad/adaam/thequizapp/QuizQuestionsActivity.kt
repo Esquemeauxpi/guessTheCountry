@@ -116,6 +116,9 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(view: View?) {
 
+        noBodyFinWithMyClickCliqueClickClique()
+
+
         when (view?.id) {
             R.id.tv_option_one -> {
                 tvOptionOne?.let {
@@ -140,6 +143,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                     selectedOptionView(it, 4)
                 }
             }
+
 //
 //            if ((tvOptionOne?.isSelected == true || tvOptionTwo?.isSelected == true
 //                        || tvOptionThree?.isSelected == true || tvOptionFour?.isSelected == true)
@@ -209,6 +213,19 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
 
 
         )
+    }
+
+    private fun noBodyFinWithMyClickCliqueClickClique() {
+
+        //This shouldn't be private
+                    if (tvOptionOne?.isSelected == false || tvOptionTwo?.isSelected == false
+                        || tvOptionThree?.isSelected == false || tvOptionFour?.isSelected == false
+            ) {
+                buttonSubmit?.isClickable == false
+            } else {
+                buttonSubmit?.isClickable == true
+            }
+
     }
 
     private fun answerView(answer: Int, drawableView: Int) {
