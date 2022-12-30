@@ -115,6 +115,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(view: View?) {
+
         when (view?.id) {
             R.id.tv_option_one -> {
                 tvOptionOne?.let {
@@ -139,8 +140,17 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                     selectedOptionView(it, 4)
                 }
             }
+//
+//            if ((tvOptionOne?.isSelected == true || tvOptionTwo?.isSelected == true
+//                        || tvOptionThree?.isSelected == true || tvOptionFour?.isSelected == true)
+//            ) {
+//                buttonSubmit?.isEnabled == true
+//            } else {
+//                buttonSubmit?.isEnabled == false
+//            }
 
             R.id.button_submit -> {
+
                 if (mSelectedOptionPosition == 0) {
                     mCurrentPosition++
 
